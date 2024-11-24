@@ -12,6 +12,7 @@ Distilling_Sim.pyw
 To distribute this application as an executable run
 pyinstaller Distilling_Sim.pyw --onefile --noconsole --icon piece_white.ico
 
+![Screenshot of Program](https://git.sr.ht/~jaredmorgan/Distilling_Simulator/blob/master/Screenshot.png "Screenshot of Program")
 
 # Practice Modes
 When clicking or scrolling the numbers within the practice mode, you can select from the following game states.
