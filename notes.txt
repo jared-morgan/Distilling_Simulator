@@ -1,0 +1,115 @@
+
+pyinstaller Distilling_launch.pyw --onefile --noconsole
+pyinstaller Distilling_Sim.pyw --onefile --noconsole --icon piece_white.ico
+
+shiny circle dropped for a frame
+
+Practice Mode
+    0: Basic 2 colour moves (Able)                                            
+
+        ✓ Browns up through whites
+        ✓ Whites down through browns
+        ✓ Blacks down through whites
+        ✓ Whites up through blacks
+        ✓ Blacks up through browns
+        ✓ Browns down through blacks
+
+    1: First 3 colour moves (Proficient)            
+        ✓ Browns right with a step down         
+        ✓ Browns right with multiple steps down
+        ✓ Blacks right with a step up
+        ✓ Blacks right with multiple steps columns_up
+
+        ✓ Moving a long line of blacks/browns down into the mass
+
+        ✓ Atempts on a real board, no timer, no spices, normal whites
+
+    2: Moving multiple pieces at once (Distinguished)
+
+        ✓ Staircase Browns (above) (use spices to force it)
+        ✓ Staircase Browns (below)       
+        ✓ Staircase Blacks (above)       
+        ✓ Staircase Blacks (below)
+        ✓ Whites through staircase to move it up
+        ✓ Unboxing
+        ✓ Idea of saving important corner pieces when staircasing
+
+        ✓ Atemtps on a real board, no timer, no spices, normal whites
+
+    3: More difficult moves (Respected)
+
+        ✓ Crawling
+        ✓ Butterfly
+        ✓ Combined Crawling and butterfly to a target on board
+        ✓ The horizontal drag
+        ✓ Unblocking the classic noob stuck
+
+        ✓ Atemtps on a real board, triple(?) timer, no spices, low whites
+        ✓ Atemtps on a real board, double timer, no spices, almost normal whites
+        
+
+    4: Combining Difficult Moves (Master)       
+
+        ✓ Rescuing Stuck lone pieces using the horizontal drag
+            ✓ Top left browns
+            ✓ bottom left blacks
+        ✓ Combining crawling, staircase and unboxing to move a large amount of pieces.
+        ✓ Atemtps on a real board, normal timer, no spices, normal whites
+        
+    5: Introducing Spices (Renowned)        
+        
+        ✓ Prioritizing the five main noob spice stucks
+        ✓ Staircasing over spices - leave enough pieces
+        ✓ Crawling below spices
+        ✓ Reverse staircase for spices
+        
+        ✓ Atemtps on a real board, normal timer, normal spices, normal whites
+
+    6: End game (Grand Master)    
+
+       ✓ Rescuing browns/blacks
+       ✓ ....
+
+       ✓ End game  no timer
+       ✓ End game  normal timer
+       ✓ End game noral timer + spices
+
+    7: Mid game practice (Legendary)        
+
+        ✓ Mid-game (36 junk?) no spices
+        ✓ Mid-game (36 junk?) spices
+
+    8: Late Mid game practice (Ultimate)       
+
+        ✓ Mid-games with 19 junk and no spices
+        ✓ Mid-games with 19 junk and spices
+        Early spice traps
+
+    9: Burn stuff (#1)       
+
+        ✓ Mid-games 19 junk, spices & difficult
+        ✓ Mid-games 19 junk, extra spices
+        ✓ Mid-games 19 junk, extra spices & difficulty
+        ✓ Hooking a burn into the end column
+        ✓ crawling a burn
+        ✓ Walking the dog
+        ✓ Moving a burn up
+        ✓ Moving a burn up
+        ✓ Saving a top corner burn, 2bl 1br
+        ✓ Saving a top corner burn, 1bl 2br
+        ✓ Saving a bot corner burn, 2bl 1br
+        ✓ Saving a bot corner burn, 1bl 2br
+        ✓ Moving a burn wall
+        ✓ crawling multiple burns
+        ✓ Walking the pack
+        ✓ creating a burn pattern you can move together
+        ✓ Moving a burn around a spice
+
+        ✓ Spice Trap Mode
+
+
+TODO :
+    one sound per frame, prio alert
+    save config settings
+    os module
+
