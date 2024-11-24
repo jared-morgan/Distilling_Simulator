@@ -119,6 +119,6 @@ When clicking or scrolling the numbers within the practice mode, you can select 
         ✓ Spice Trap Mode
 		
 # To Do:
-    one sound per frame, prio alert
-    save config settings
-    os module
+- one sound per frame, prio alert
+- save config settings
+- os module
