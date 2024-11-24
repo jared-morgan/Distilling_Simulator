@@ -1,11 +1,22 @@
+# Requirements
+This program requires the following python modules:
+pygame
+pyperclip
+pillow
 
-pyinstaller Distilling_launch.pyw --onefile --noconsole
+# Running
+To start this program run 
+Distilling_Sim.pyw
+
+# Distribution
+To distribute this application as an executable run
 pyinstaller Distilling_Sim.pyw --onefile --noconsole --icon piece_white.ico
 
-shiny circle dropped for a frame
 
-Practice Mode
-    0: Basic 2 colour moves (Able)                                            
+# Practice Modes
+When clicking or scrolling the numbers within the practice mode, you can select from the following game states.
+    
+	0: Basic 2 colour moves (Able)                                            
 
         ✓ Browns up through whites
         ✓ Whites down through browns
@@ -106,10 +117,8 @@ Practice Mode
         ✓ Moving a burn around a spice
 
         ✓ Spice Trap Mode
-
-
-TODO :
+		
+# To Do:
     one sound per frame, prio alert
     save config settings
     os module
-

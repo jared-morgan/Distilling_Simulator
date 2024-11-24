@@ -3,7 +3,6 @@ import copy
 import math
 import random
 import pyperclip
-import math
 import re
 
 from gui import *
