@@ -1379,7 +1379,7 @@ def get_practice_board(practice_num, spawn_rates, difficulty, seed):
 
 random_seed = generate_seed(False) # I need a random number selected before the user sets the seed so that they can escape the loop of non randomness if desired.
 
-
+# Main Loop
 while not crashed:
     game_display.fill(black)
     

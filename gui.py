@@ -4,6 +4,8 @@ import math
 import copy
 import os
 import sys
+import dearpygui.dearpygui as dpg
+import dearpygui.demo as demo
 
 script_path = sys.argv[0]
 script_dir = os.path.dirname(script_path)
@@ -58,6 +60,9 @@ swaps_gap_y = 20
 swaps_long_y = 179
 swaps_start_x = 56
 
+
+def py_gui_things():
+    return
 
 def volume_display(volume_level):
     game_display.blit(volume_img[volume_level], (740, 540))
@@ -286,10 +291,10 @@ def display_texts(settings, score, cc_chain, time_passed, columns_up, board_acti
     blue = (85, 162, 250)
     grey = (150, 150, 150)
 
-    my_font = pygame.font.Font(".\media\Roboto-Regular.ttf", 24)
-    my_font_medium = pygame.font.Font(".\media\Roboto-Regular.ttf", 45)
-    my_font_large = pygame.font.Font(".\media\Roboto-Regular.ttf", 72)
-    my_font_small = pygame.font.Font(".\media\Roboto-Regular.ttf", 12)
+    my_font = pygame.font.Font(os.path.join(script_dir, "media", "Roboto-Regular.ttf"), 24)
+    my_font_medium = pygame.font.Font(os.path.join(script_dir, "media", "Roboto-Regular.ttf"), 45)
+    my_font_large = pygame.font.Font(os.path.join(script_dir, "media", "Roboto-Regular.ttf"), 72)
+    my_font_small = pygame.font.Font(os.path.join(script_dir, "media", "Roboto-Regular.ttf"), 12)
 
     text_standard = my_font.render("Standard", True, white)
     text_seeded = my_font.render("Seeded", True, white)

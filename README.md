@@ -1,8 +1,6 @@
 # Requirements
 This program requires the following python modules:
-pygame
-pyperclip
-pillow
+dearpygui, numpy, pygame, pyperclip, sounddevice
 
 # Running
 To start this program run 
@@ -12,7 +10,7 @@ Distilling_Sim.pyw
 To distribute this application as an executable run
 pyinstaller Distilling_Sim.pyw --onefile --noconsole --icon piece_white.ico
 
-![Screenshot of Program](https://git.sr.ht/~jaredmorgan/Distilling_Simulator/blob/master/Screenshot.png "Screenshot of Program")
+![Screenshot of Program](https://github.com/jared-morgan/Distilling_Simulator/blob/main/Screenshot.png?raw=true "Screenshot of Program")
 
 # Practice Modes
 When clicking or scrolling the numbers within the practice mode, you can select from the following game states.
@@ -122,4 +120,3 @@ When clicking or scrolling the numbers within the practice mode, you can select 
 # To Do:
 - one sound per frame, prio alert
 - save config settings
-- os module
