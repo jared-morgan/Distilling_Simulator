@@ -120,3 +120,18 @@ When clicking or scrolling the numbers within the practice mode, you can select 
 # To Do:
 - one sound per frame, prio alert
 - save config settings
+# Web version
+A TypeScript port lives in `web/` and runs in the browser, so it can be hosted on GitHub Pages.
+It draws the same 800x600 screen from the images in `media/`, and seeds are interchangeable
+with the desktop version (the same seed gives the same board in both).
+
+```
+cd web
+npm install
+npm run dev     # local server with hot reload
+npm test        # unit tests
+npm run build   # static site in web/dist
+```
+
+Pushing to `main` builds and deploys the site with the workflow in `.github/workflows/pages.yml`.
+To turn it on, set the repository's Settings > Pages > Source to "GitHub Actions".
