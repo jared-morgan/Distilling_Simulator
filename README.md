@@ -1,129 +1,22 @@
-# Requirements
-This program requires the following python modules:
-dearpygui, numpy, pygame, pyperclip, sounddevice
-
 # Running
-To start this program run 
-Distilling_Sim.pyw
 
-# Distribution
-To distribute this application as an executable run
+## Desktop (Python)
+Requires Python 3.13+ and the modules dearpygui, numpy, pygame, pyperclip and sounddevice.
+
+```
+uv sync
+uv run Distilling_Sim.pyw
+```
+
+Or install the modules with pip and run `Distilling_Sim.pyw` directly.
+
+To build a standalone executable:
+
+```
 pyinstaller Distilling_Sim.pyw --onefile --noconsole --icon piece_white.ico
+```
 
-![Screenshot of Program](https://github.com/jared-morgan/Distilling_Simulator/blob/main/Screenshot.png?raw=true "Screenshot of Program")
-
-# Practice Modes
-When clicking or scrolling the numbers within the practice mode, you can select from the following game states.
-    
-	0: Basic 2 colour moves (Able)                                            
-
-        ✓ Browns up through whites
-        ✓ Whites down through browns
-        ✓ Blacks down through whites
-        ✓ Whites up through blacks
-        ✓ Blacks up through browns
-        ✓ Browns down through blacks
-
-    1: First 3 colour moves (Proficient)            
-        ✓ Browns right with a step down         
-        ✓ Browns right with multiple steps down
-        ✓ Blacks right with a step up
-        ✓ Blacks right with multiple steps columns_up
-
-        ✓ Moving a long line of blacks/browns down into the mass
-
-        ✓ Atempts on a real board, no timer, no spices, normal whites
-
-    2: Moving multiple pieces at once (Distinguished)
-
-        ✓ Staircase Browns (above) (use spices to force it)
-        ✓ Staircase Browns (below)       
-        ✓ Staircase Blacks (above)       
-        ✓ Staircase Blacks (below)
-        ✓ Whites through staircase to move it up
-        ✓ Unboxing
-        ✓ Idea of saving important corner pieces when staircasing
-
-        ✓ Atemtps on a real board, no timer, no spices, normal whites
-
-    3: More difficult moves (Respected)
-
-        ✓ Crawling
-        ✓ Butterfly
-        ✓ Combined Crawling and butterfly to a target on board
-        ✓ The horizontal drag
-        ✓ Unblocking the classic noob stuck
-
-        ✓ Atemtps on a real board, triple(?) timer, no spices, low whites
-        ✓ Atemtps on a real board, double timer, no spices, almost normal whites
-        
-
-    4: Combining Difficult Moves (Master)       
-
-        ✓ Rescuing Stuck lone pieces using the horizontal drag
-            ✓ Top left browns
-            ✓ bottom left blacks
-        ✓ Combining crawling, staircase and unboxing to move a large amount of pieces.
-        ✓ Atemtps on a real board, normal timer, no spices, normal whites
-        
-    5: Introducing Spices (Renowned)        
-        
-        ✓ Prioritizing the five main noob spice stucks
-        ✓ Staircasing over spices - leave enough pieces
-        ✓ Crawling below spices
-        ✓ Reverse staircase for spices
-        
-        ✓ Atemtps on a real board, normal timer, normal spices, normal whites
-
-    6: End game (Grand Master)    
-
-       ✓ Rescuing browns/blacks
-       ✓ ....
-
-       ✓ End game  no timer
-       ✓ End game  normal timer
-       ✓ End game noral timer + spices
-
-    7: Mid game practice (Legendary)        
-
-        ✓ Mid-game (36 junk?) no spices
-        ✓ Mid-game (36 junk?) spices
-
-    8: Late Mid game practice (Ultimate)       
-
-        ✓ Mid-games with 19 junk and no spices
-        ✓ Mid-games with 19 junk and spices
-        Early spice traps
-
-    9: Burn stuff (#1)       
-
-        ✓ Mid-games 19 junk, spices & difficult
-        ✓ Mid-games 19 junk, extra spices
-        ✓ Mid-games 19 junk, extra spices & difficulty
-        ✓ Hooking a burn into the end column
-        ✓ crawling a burn
-        ✓ Walking the dog
-        ✓ Moving a burn up
-        ✓ Moving a burn up
-        ✓ Saving a top corner burn, 2bl 1br
-        ✓ Saving a top corner burn, 1bl 2br
-        ✓ Saving a bot corner burn, 2bl 1br
-        ✓ Saving a bot corner burn, 1bl 2br
-        ✓ Moving a burn wall
-        ✓ crawling multiple burns
-        ✓ Walking the pack
-        ✓ creating a burn pattern you can move together
-        ✓ Moving a burn around a spice
-
-        ✓ Spice Trap Mode
-		
-# To Do:
-- one sound per frame, prio alert
-- save config settings
-# Web version
-A TypeScript port lives in `web/` and runs in the browser, so it can be hosted on GitHub Pages.
-It draws the same 800x600 screen from the images in `media/`, and seeds are interchangeable
-with the desktop version (the same seed gives the same board in both).
+## Web (TypeScript)
 
 ```
 cd web
@@ -133,5 +26,4 @@ npm test        # unit tests
 npm run build   # static site in web/dist
 ```
 
-Pushing to `main` builds and deploys the site with the workflow in `.github/workflows/pages.yml`.
-To turn it on, set the repository's Settings > Pages > Source to "GitHub Actions".
+Pushing to `main` deploys to GitHub Pages via `.github/workflows/pages.yml` (set Settings > Pages > Source to "GitHub Actions").
